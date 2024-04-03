@@ -13,6 +13,9 @@ def sort_csv(input_file, output_file, sort_columns):
     with open(input_file, 'r', newline='') as infile:
         reader = csv.reader(infile)
         data = list(reader)
+        header = data[0]  # Extract header row
+        data = data[1:]   # Remove header row from the data
+
 
     # Sort the data based on specified columns
     sorted_data = sorted(data, key=lambda x: (x[6], x[4]))
@@ -20,6 +23,7 @@ def sort_csv(input_file, output_file, sort_columns):
     # Write the sorted data to a new CSV file
     with open(output_file, 'w', newline='') as outfile:
         writer = csv.writer(outfile)
+        writer.writerow(header)
         writer.writerows(sorted_data)
 
 

@@ -1,0 +1,13 @@
+Rooms have seats arranged in a matrix denoted by rows and columns. Students have register number, name and a subject. I can store these data in "students" table and "rooms" table in mysql.
+Attributes of student table are Name, Register Number and subject. Attributes of Room are Room Name, Maximum Row, Maximum Column.
+can you help me build adjango application for the following requirements - 
+
+Assign students to seats in each room.
+
+= =============================================== = 
+
+Rooms have seats arranged in a matrix denoted by rows and columns. Students have register number, name and a subject. I can store these data in "students.csv" and "rooms.csv".
+Columns of students.csv are Name, Register Number and subject. Columns of Room are Room Name, Maximum Row, Maximum Column.
+can you help me build a python application for the following requirements - 
+
+Read each student and assign them to a room. When the seats of the room are exhausted assiign them to the next room and so on.
